@@ -3,8 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:calcEsfera"
-        mc:Ignorable="d"
+       
         Title="Esfera" Height="338.422" Width="357.377">
     <Grid RenderTransformOrigin="0.59,0.513" Margin="0,0,2,-1">
         <Grid.ColumnDefinitions>

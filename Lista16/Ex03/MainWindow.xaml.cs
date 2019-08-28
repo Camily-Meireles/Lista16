@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Calculo
+namespace Ex03
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam
@@ -27,14 +27,13 @@ namespace Calculo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Viagem v = new Viagem();
-            v.SetDist(double.Parse(dist.Text));
-            v.SetTemp(double.Parse(temp.Text));
-            vel.Text = v.CalcVel().ToString();
+            Retangulo r = new Retangulo();
+            r.SetBase(double.Parse(Base.Text));
+            r.SetAltura(double.Parse(Altura.Text));
+            area.Text = r.CalcArea().ToString();
+            diagonal.Text = r.CalcDiagonal().ToString();
 
 
         }
-
-
     }
 }
