@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Calculo"
+        xmlns:local="clr-namespace:Ex01"
         mc:Ignorable="d"
         Title="Viagem" Height="311.68" Width="561.168">
     <Grid>
@@ -13,11 +13,12 @@
         </Grid.ColumnDefinitions>
         <TextBox x:Name="dist" HorizontalAlignment="Left" Height="23" Margin="28,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <TextBox x:Name="temp" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Calcular" HorizontalAlignment="Left" Margin="28,127,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,43,0,0" TextWrapping="Wrap" Text="Distância " VerticalAlignment="Top" Height="26" Width="120"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,43,0,0" TextWrapping="Wrap" Text="Tempo" VerticalAlignment="Top" Height="26" Width="103"/>
         <TextBox x:Name="vel" HorizontalAlignment="Left" Height="23" Margin="28,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,177,0,0" TextWrapping="Wrap" Text="Velocidade - km/ h" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Calcular" HorizontalAlignment="Left" Margin="28,127,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        
 
     </Grid>
 </Window>
