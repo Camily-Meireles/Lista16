@@ -25,6 +25,57 @@ namespace Ex05
             InitializeComponent();
         }
 
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Numeros n = new Numeros();
+            n.SetInicio(int.Parse(inicio.Text));
+            n.SetFim(int.Parse(fim.Text));
+
+            bool impar, par;
+            if (pares.IsChecked.Value == true && impares.IsChecked.Value == false)
+            {
+                 par = true;
+                 impar = false;
+                intervalo.Items.Clear();
+                 foreach(int c in n.Calcular(par, impar))
+                {
+                    intervalo.Items.Add(c);
+                } 
+                 
+                 
+            }
+                else par = false;
+
+            if (impares.IsChecked.Value == true && pares.IsChecked.Value == false)
+            {
+                impar = true;
+                par = false;
+                n.Calcular(par, impar);
+                intervalo.Items.Clear();
+                foreach (int c in n.Calcular(par, impar))
+                {
+                    intervalo.Items.Add(c);
+                }
+
+            }
+                else impar = false;
+
+            if (pares.IsChecked.Value == true && impares.IsChecked.Value == true)
+            {
+                par = true;
+                impar = true;
+                n.Calcular(par, impar);
+                intervalo.Items.Clear();
+                foreach (int c in n.Calcular(par, impar))
+                {
+                    intervalo.Items.Add(c);
+                }
+            }
+
+        }
+
+
+
+        
     }
 }

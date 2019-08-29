@@ -36,21 +36,27 @@ namespace Ex05
                 if (x % 2 == 0 && pares == true && impares == false)
                 {
                     intervalo[c] = x;
-                    ++c;
+                    c++;
+
                 }
-                if (x != 2 == 0 && impares == true && pares == false)
+                if (x % 2 != 0 && impares == true && pares == false)
                 {
                     intervalo[c] = x;
-                    ++c;
+                    c++;
                 }
 
                 if (pares == true && impares == true)
                 {
                     intervalo[c] = x;
-                    ++c;
+                    c++;
                 }
-                
             }
-        }
+            int[] intervalo2 = new int[c];
+            Array.Copy(intervalo, intervalo2, c); 
+            return intervalo2;
+            
+
+            }
+
     }
 }

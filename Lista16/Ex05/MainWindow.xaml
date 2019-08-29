@@ -10,13 +10,13 @@
         <TextBlock HorizontalAlignment="Left" Margin="22,23,0,0" TextWrapping="Wrap" Text="Intervalo" VerticalAlignment="Top" Height="32" Width="128"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,60,0,0" TextWrapping="Wrap" Text="Início" VerticalAlignment="Top" Width="62"/>
         <TextBlock HorizontalAlignment="Left" Margin="156,60,0,0" TextWrapping="Wrap" Text="Fim" VerticalAlignment="Top" Width="37"/>
-        <TextBox x:Name="inicio" HorizontalAlignment="Left" Height="23" Margin="22,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="inicio" HorizontalAlignment="Left" Height="23" Margin="22,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name ="fim" HorizontalAlignment="Left" Height="23" Margin="156,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,162,0,0" TextWrapping="Wrap" Text="Opções" VerticalAlignment="Top"/>
         <CheckBox x:Name="pares"  Content="Pares" HorizontalAlignment="Left" Margin="22,205,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="impares"  Content="Ìmpares" HorizontalAlignment="Left" Margin="22,236,0,0" VerticalAlignment="Top"/>
-        <Button Content="Calcular" HorizontalAlignment="Left" Margin="22,296,0,0" VerticalAlignment="Top" Width="149" Height="28"/>
-        <ListBox x:Name="intervalo" HorizontalAlignment="Left" Height="100" Margin="345,60,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.327,0.33"/>
+        <Button Content="Calcular" HorizontalAlignment="Left" Margin="22,296,0,0" VerticalAlignment="Top" Width="149" Height="28" Click="Button_Click"/>
+        <ListBox x:Name="intervalo" HorizontalAlignment="Left" Height="100" Margin="345,60,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
